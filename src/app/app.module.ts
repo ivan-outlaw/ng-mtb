@@ -9,6 +9,19 @@ import { FooterComponent } from './page-elements/footer/footer.component';
 import { HeaderComponent } from './page-elements/header/header.component';
 import { ImageBrakeParallaxComponent } from './page-elements/image-brake-parallax/image-brake-parallax.component';
 import { MainArticleComponent } from './page-elements/main-article/main-article.component';
+import { HistoryComponent } from './pages/history/history.component';
+import { EquipmentComponent } from './pages/equipment/equipment.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import {RouterModule, Routes} from "@angular/router";
+import { HomeComponent } from './pages/home/home.component';
+
+const appRoutes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'history', component: HistoryComponent},
+  {path: 'equipment', component: EquipmentComponent},
+  {path: 'contact', component: ContactComponent}
+];
 
 @NgModule({
   declarations: [
@@ -17,9 +30,14 @@ import { MainArticleComponent } from './page-elements/main-article/main-article.
     FooterComponent,
     HeaderComponent,
     ImageBrakeParallaxComponent,
-    MainArticleComponent
+    MainArticleComponent,
+    HistoryComponent,
+    EquipmentComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
+      RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule
