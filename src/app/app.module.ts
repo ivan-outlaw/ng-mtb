@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './page-elements/navbar/navbar.component';
 import { FooterComponent } from './page-elements/footer/footer.component';
 import { HeaderComponent } from './page-elements/header/header.component';
-import { ImageBrakeParallexComponent } from './page-elements/image-brake-parallex/image-brake-parallex.component';
 import { ImageBrakeParallaxComponent } from './page-elements/image-brake-parallax/image-brake-parallax.component';
 import { MainArticleComponent } from './page-elements/main-article/main-article.component';
 
@@ -17,7 +16,6 @@ import { MainArticleComponent } from './page-elements/main-article/main-article.
     NavbarComponent,
     FooterComponent,
     HeaderComponent,
-    ImageBrakeParallexComponent,
     ImageBrakeParallaxComponent,
     MainArticleComponent
   ],
