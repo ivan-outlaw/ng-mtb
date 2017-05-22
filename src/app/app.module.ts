@@ -12,16 +12,8 @@ import { MainArticleComponent } from './page-elements/main-article/main-article.
 import { HistoryComponent } from './pages/history/history.component';
 import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './pages/home/home.component';
-
-const appRoutes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'history', component: HistoryComponent},
-  {path: 'equipment', component: EquipmentComponent},
-  {path: 'contact', component: ContactComponent}
-];
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -37,7 +29,7 @@ const appRoutes: Routes = [
     HomeComponent
   ],
   imports: [
-      RouterModule.forRoot(appRoutes),
+      routes,
     BrowserModule,
     FormsModule,
     HttpModule
