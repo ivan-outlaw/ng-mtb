@@ -1,9 +1,27 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-4" *ngFor="let card of cards">
-            <h2> {{ card.title }} </h2>
-            <p><img class="img-fluid" src="{{ card.imageLink }}" alt=""></p>
-            <p>{{ card.content }}</p>
+        <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let card of cards">
+
+            <div class="text-thumb">
+                <div class="text-thumb-heading">
+                    <h2> {{ card.title }} </h2>
+                </div>
+            </div>
+
+            <a routerLink="{{card.linkRoute}}">
+                <div class="img-thumb">
+                    <div class="overlay"></div>
+                    <div class="img-thumb-text">{{ card.linkTitle}}</div>
+                    <figure>
+                        <img class="img-fluid grow" src="{{ card.imageLink }}" alt="{{ card.title }} image">
+                    </figure>
+                </div>
+            </a>
+
+            <div class="text-thumb">
+                <p>{{ card.content }}</p>
+            </div>
+
         </div>
     </div>
 </div>

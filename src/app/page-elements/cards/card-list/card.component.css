@@ -1,0 +1,76 @@
+/* MAIN INFO - THUMB ARTICLES
+============================ */
+#main-info {
+    margin-top: 30px;
+}
+
+.main-info {
+    overflow: hidden;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 162, 107, 0);
+    z-index: 50;
+    transition: all .2s ease-in-out;
+}
+
+.img-thumb-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-size: 2rem;
+    z-index: 100;
+    transition: all .2s ease-in-out;
+}
+
+.img-thumb {
+    position: relative;
+    width: 100%;
+}
+.img-thumb:hover img, .img-thumb:focus img {
+    transform: scale(1.1);
+}
+.img-thumb:hover .overlay, .img-thumb:focus .overlay {
+    background-color: rgba(255, 162, 107, 0.3);
+}
+.img-thumb:hover .img-thumb-text, .img-thumb:focus .img-thumb-text {
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.text-thumb-heading {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #86E25F;
+}
+
+.top {
+    margin-top: 0;
+}
+
+.text-thumb {
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+/* thumb articles - info */
