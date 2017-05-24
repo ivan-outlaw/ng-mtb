@@ -1,9 +1,9 @@
-import {Routes, RouteModule} from '@angular/router';
-import {HomeComponent} from './pages/home.component';
-import {HistoryComponent} from './pages/history.component';
-import {EquipmentComponent} from './pages/equipment.component';
-import {ContactComponent} from './pages/contact.component';
-import {ModuleWidthProviders} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {HomeComponent} from './pages/home/home.component';
+import {HistoryComponent} from './pages/history/history.component';
+import {EquipmentComponent} from './pages/equipment/equipment.component';
+import {ContactComponent} from './pages/contact/contact.component';
+import {ModuleWithProviders} from '@angular/core';
 
 const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -13,4 +13,4 @@ const appRoutes: Routes = [
     {path: 'contact', component: ContactComponent}
 ];
 
-export const routes:ModuleWidthProviders = RouterModule.forRoot(appRoutes);
+export const routes:ModuleWithProviders = RouterModule.forRoot(appRoutes);
