@@ -14,6 +14,9 @@ import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { routes } from './app.routes';
+import { CardsComponent } from './page-elements/cards/cards.component';
+import { CardListComponent } from './page-elements/cards/card-list/card-list.component';
+import { CardComponent } from './page-elements/cards/card-list/card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { routes } from './app.routes';
     HistoryComponent,
     EquipmentComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent,
+    CardListComponent,
+    CardComponent
   ],
   imports: [
       routes,
