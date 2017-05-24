@@ -17,6 +17,7 @@ import { routes } from './app.routes';
 import { CardsComponent } from './page-elements/cards/cards.component';
 import { CardListComponent } from './page-elements/cards/card-list/card-list.component';
 import { CardComponent } from './page-elements/cards/card-list/card.component';
+import {CardService} from "./services/card.service";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { CardComponent } from './page-elements/cards/card-list/card.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
