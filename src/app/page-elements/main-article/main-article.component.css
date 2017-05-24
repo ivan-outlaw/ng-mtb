@@ -1,0 +1,29 @@
+/* MAIN ARTICLE
+============================ */
+#main-article {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.main-article-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 100px 0 20px 0;
+    border-bottom: 5px solid #86E25F;
+}
+
+.main-article-text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 100px;
+}
+
+.main-article-text p {
+    margin-bottom: 20px;
+}
+
+.main-article-text ul {
+    margin-left: 50px;
+}
+
+/* main article */

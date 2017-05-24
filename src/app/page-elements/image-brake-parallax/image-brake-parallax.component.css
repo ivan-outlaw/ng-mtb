@@ -1,0 +1,21 @@
+/* IMAGE BRAKE
+============================ */
+#image-brake {
+    position: relative;
+    background:
+            linear-gradient(rgba(255, 162, 107, 0.35), rgba(255, 162, 107, 0.35)),
+            url(../../../assets/img/img-brake.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+.image-brake-text {
+    position: relative;
+    top: 120px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}

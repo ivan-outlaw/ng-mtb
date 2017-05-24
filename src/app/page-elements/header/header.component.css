@@ -1,0 +1,8 @@
+header {
+    position: relative;
+    background: url(../../../assets/img/bike.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
